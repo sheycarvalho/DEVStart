@@ -61,11 +61,12 @@ https://codelab-editor.vercel.app/auth
 |  24/09/2025      | Mentoria 4: Trilha 1 - Fase 03 - Temas 15-18                        |
 |  29/09/2025      | Mentoria 5: Trilha 1 - Fase 04 - Temas 19-22                        |
 |  01/10/2025      | Mentoria 6: Trilha 1 - Fase 04 - Temas 23-25                        |
-|  06/10/2025      | Mentoria 7: Trilha 1 - Fase 04, Temas 26-28                         |
-|  08/10/2025      | Mentoria 8: Trilha 1 - Fase 05 - Temas 29 a 32                      |
+|  06/10/2025      | Mentoria 7: Trilha 1 - Fase 04 - Temas 26-28                        |
+|  08/10/2025      | Mentoria 8: Trilha 1 - Fase 05 - Temas 29-32                        |
 |  13/10/2025      | Mentoria 9: Trilha 1 - Fase 06 - Temas 33-34                        |
 |  15/10/2025      | Mentoria 10: Trilha 1 - Fase 06 - Temas 35–36                       |
 |  20/10/2025      | Mentoria 11: Trilha 1 - Fase 06 - Temas 37–38                       |
+|  22/10/2025      | Mentoria 12: Trilha 1 - Fase 07 - Temas 40–42                       |
 
 
 ---
