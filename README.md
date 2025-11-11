@@ -11,16 +11,20 @@ Treinamento intensivo com mentorias ao vivo de 15/09/2025 a 01/04/2026.
 ## 📖 Plano de Estudos
 https://drive.google.com/file/d/1UJcedXLPQtkuvQJBStfaSzcgLW7i_LOo/view
 
+---
+
+
 ## 📖 GEM do Gemini, focado em HTML, CSS E Javascript
 https://gemini.google.com/gem/a9bae7239c9b?usp=sharing
 
-## 📷 Zoom (link fixo)
-https://us02web.zoom.us/j/84574102525?pwd=lpAbRfwsRLNQrQsLAYneUTAMei7onB.1
+## 📷 Aula (link fixo)
 
 https://meet.google.com/itn-pbea-sbv
 
 ## 📚 Aulas no youtube
 https://www.youtube.com/playlist?list=PLnb0jIQ3sHMS1VBHJ78lYymekXQPs88ZN
+
+---
 
 ## 📚 Lives & comunidades no youtube
 [DEVstart] Lives Técnicas
@@ -38,18 +42,26 @@ https://www.youtube.com/watch?v=E97GWrO41Xs
 [Comunidade LAB 365] Masterclass Como a IA pode auxiliar nos estudos e na carreira | 25.06.25
 https://www.youtube.com/watch?si=lovCix0VYFNp4Ze8&v=C-2j-NOKS04&feature=youtu.be
 
+---
+
 ## 🖥️ Softwares
 git - https://git-scm.com/downloads/win
 
 vs code - https://code.visualstudio.com
 
+---
+
 ## 🌐 Comunidade Discord
 https://discord.com/invite/DqyVx849Te
+
+---
 
 ## 🖥️ Editores de código
 https://codelab-editor.vercel.app/compartilhar/t1a9-introducao-a-objetos-javascript
 
 https://codelab-editor.vercel.app/auth
+
+---
 
 ## 🧩 Conteúdos
 
@@ -68,6 +80,181 @@ https://codelab-editor.vercel.app/auth
 |  20/10/2025      | Mentoria 11: Trilha 1 - Fase 06 - Temas 37–38                       |
 |  22/10/2025      | Mentoria 12: Trilha 1 - Fase 07 - Temas 40–42                       |
 |  27/10/2025      | Mentoria 13: Trilha 1 - Fase 08 - Temas 43–45                       |
+|  29/10/2025      | Mentoria 14: Trilha 1 - Fase 08 - Temas 43–45                       |
+|  03/11/2025      | Mentoria 15: Trilha 2 - Fase 01 - Temas 01–04                       |
+|  05/11/2025      | Mentoria 16: Trilha 2 - Fase 02 - Temas 05–09                       |
+|  10/11/2025      | Mentoria 17: Trilha 2 - Fase 02 - Temas 09–12                       |
+
+
+---
+
+## 📘 Introdução ao HTML
+
+- O que é HTML e sua função na Web\
+- Estrutura base de um documento HTML (boilerplate)\
+- Elementos essenciais:
+  - `<html>`, `<head>`, `<body>`\
+  - `<title>` dentro do `<head>`\
+- Títulos e semântica (do `<h1>` ao `<h6>`)\
+- Importância do uso correto das tags e suas limitações\
+- Espaços em branco e identação
+  - Colocar tags uma ao lado da outra **não altera a saída visual**\
+- Atributos de tags (`lang`, `title`, etc.)\
+- Quebra de linha (`<br>`)\
+- Comentários (`<!-- comentário -->`)\
+- Importância da semântica para acessibilidade e boas práticas
+- HTML **não define estilos nem comportamentos**, mas organiza
+as informações para que o navegador e outros agentes possam
+interpretá-las corretamente.
+
+---
+
+## 🧩 Exemplo prático
+
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha Primeira Página</title>
+  </head>
+  <body>
+    <h1>Olá, Mundo!</h1>
+    <h2>Este é o meu primeiro documento HTML.</h2>
+    <h5>
+      Adicionando uma quebra de linha <br />
+      com a tag br.
+    </h5>
+    <!-- Este é um comentário -->
+     <h4>Lorem ipsum, dolor sit amet <br> <!-- <= isso é quebra de linha -->
+     consectetur adipisicing elit. Tempora, ab?
+  </body>
+</html>
+```
+
+---
+
+# 💻 HTML | Parágrafos, Listas, Landmarks e Imagens
+
+Construção do **protótipo JornadaDev — Perfil/Portfólio**, aplicando elementos semânticos e boas práticas de acessibilidade.
+
+Protótipo no Figma:  
+👉 [JornadaDev - Perfil/Portfólio](https://www.figma.com/design/QvPDepxv6IxxFhkk3ZGyjE/JornadaDev---Perfil-Portifolio?node-id=2-15&t=j9io0jK2z2GGICHo-1)
+
+---
+
+## 🧱 Conteúdo Abordado
+
+### 1. **Elemento Parágrafo `<p>`**
+
+- Criação e organização de blocos de texto.
+- Separação semântica de ideias e tópicos.
+- Boas práticas: evitar uso excessivo de `<br>` e manter legibilidade.
+
+```html
+<p>Sou um desenvolvedor apaixonado por tecnologia e ensino.</p>
+<p>Atualmente estou aprendendo HTML, CSS e JavaScript.</p>
+```
+
+---
+
+### 2. **Listas `<ul>`, `<ol>` e `<li>`**
+
+- Diferença entre listas ordenadas e não ordenadas.
+- Uso de listas para representar experiências, habilidades e etapas do projeto.
+
+```html
+<h3>Minhas skills</h3>
+<ul>
+  <li>Desenvolvimento front-end</li>
+  <li>Desenvolvimento back-end</li>
+  <li>Administrador de banco</li>
+</ul>
+
+<ol>
+  <li>PHP</li>
+  <li>
+    JAVASCRIPT
+    <ol>
+      <li>NODEJS</li>
+      <li>REACTJS</li>
+      <li>REACT NATIVE</li>
+    </ol>
+  </li>
+  <li>C#</li>
+  <li>.NET</li>
+</ol>
+```
+
+---
+
+### 3. **Landmarks HTML**
+
+- Estrutura semântica aplicada: `<header>`, `<main>`, `<footer>`.
+- O elemento `<main>` é **obrigatório** para acessibilidade.
+- O `<header>` apresenta o logotipo e título.
+- O `<footer>` contém os créditos e direitos autorais.
+
+```html
+<header>
+  <img src="logotipo.png" alt="Logotipo do portifolio JornadaDev" />
+</header>
+
+<main>
+  <img
+    src="https://github.com/nicholasmacedoo.png"
+    height="120"
+    alt="Foto perfil"
+  />
+  <h1>Nome do aluno</h1>
+  <p>Desenvolvedor</p>
+  <!-- Conteúdo e listas -->
+</main>
+
+<footer>
+  <p>Todos os direitos reservados @ lab365 - 2025</p>
+</footer>
+```
+
+---
+
+### 4. **Imagens `<img>`**
+
+- Atributos utilizados: `src`, `alt`, `height`, `width`.
+- Importância do `alt` para acessibilidade e SEO.
+
+```html
+<img
+  src="https://github.com/nicholasmacedoo.png"
+  height="120"
+  alt="Foto perfil"
+/>
+```
+
+---
+
+### 5. **Validação com W3C Validator**
+
+- Validação feita no site [validator.w3.org](https://validator.w3.org/).
+- Corrigidos avisos de acessibilidade e estrutura, garantindo o uso correto do `<main>` e dos elementos semânticos.
+
+---
+
+## 🧠 Resultados da Aula
+
+- Página HTML validada e organizada sem erros de acessibilidade.
+- Aplicação prática de **landmarks**, **listas** e **parágrafos**.
+- Início da estrutura do **portfólio JornadaDev** no HTML.
+- Base pronta para evoluir nas próximas aulas com **CSS e estilização**.
+
+---
+
+## 🚀 Próximos Passos
+
+- Aprimorar a identidade visual com CSS.
+- Adicionar seções e componentes do protótipo Figma.
+- Preparar o portfólio para integração com projetos e links externos.
 
 
 ---
@@ -95,5 +282,5 @@ https://codelab-editor.vercel.app/auth
 | `return`               | devolve o resultado pra quem chamou                                 |
 
 
-
+---
 
