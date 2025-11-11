@@ -1,4 +1,4 @@
-🚀 Repositório dedicado à Jornada DEV!
+🚀 Repositório dedicado à Jornada DEV — SENAI/SC
 
 ✨ Detalhamento:
 
@@ -284,3 +284,182 @@ Protótipo no Figma:
 
 ---
 
+# ⚛️ ReactJS
+
+**Introdução, JSX, Componentes & Props**
+
+---
+
+## 🎯 Objetivo
+
+Entendendo os conceitos fundamentais:
+
+- Diferença entre **React e JavaScript puro**;
+- O que é uma **SPA (Single Page Application)**;
+- A função do **Virtual DOM**;
+- Como o **JSX** simplifica a criação de interfaces;
+- Como criar **componentes funcionais** e reutilizáveis;
+- Como usar **props** e **props.children** para comunicação entre componentes.
+
+---
+
+## 🧠 Conceitos Abordados
+
+| Tema | Conteúdo                        |
+| ---- | ------------------------------- |
+| 01   | React x JavaScript              |
+| 02   | Primeiros Passos em React       |
+| 03   | React DOM                       |
+| 04   | Introdução ao JSX               |
+| 05   | Expressões JSX                  |
+| 06   | JSX na prática                  |
+| 07   | Components                      |
+| 08   | Props                           |
+| 09   | Projeto I — Componentes e Props |
+
+---
+
+## ⚙️ Preparação do Ambiente
+
+Ferramentas necessárias para rodar o projeto:
+
+1. **Node.js** — ambiente de execução JS fora do navegador  
+   🔗 [https://nodejs.org/en](https://nodejs.org/en)
+
+2. **VS Code** — editor de código recomendado  
+   🔗 [https://code.visualstudio.com](https://code.visualstudio.com)
+
+3. Alternativas online:
+   - [![LabCode Em Construção](https://img.shields.io/badge/LabCode-Em%20Construção-orange?style=for-the-badge&logo=react)](https://labcode.dev)
+   - [![PlayCode](https://img.shields.io/badge/PlayCode.io-Online-blue?style=for-the-badge)](https://playcode.io/)
+   - [![CodeSandbox](https://img.shields.io/badge/CodeSandbox-Online-lightgrey?style=for-the-badge&logo=codesandbox)](https://codesandbox.io/)
+
+---
+
+## 🚀 Criando o Projeto
+
+```bash
+npm create vite@latest trilha03-react-fase01
+cd trilha03-react-fase01
+npm install
+npm run dev
+```
+
+---
+
+## 💡 Estrutura Desenvolvida
+
+Foram criados dois componentes principais:
+
+### 🧩 `PrimeiroComponente`
+
+Exibe um texto recebido por **props**, convertido para letras maiúsculas:
+
+```jsx
+function PrimeiroComponente(props) {
+  const texto = props.texto;
+  const textoCaixaAlta = texto.toUpperCase();
+
+  return (
+    <div>
+      <p>{textoCaixaAlta}</p>
+    </div>
+  );
+}
+```
+
+👉 Uso no componente principal:
+
+```jsx
+<PrimeiroComponente texto="Texto padrão" />
+<PrimeiroComponente texto="Texto padrão 2" />
+```
+
+---
+
+### 🧱 `ComponenteRecebeFilhos`
+
+Demonstra o uso de **props.children**, permitindo que o componente receba elementos filhos.
+
+```jsx
+function ComponenteRecebeFilhos(props) {
+  return <div>{props.children}</div>;
+}
+```
+
+👉 Uso prático:
+
+```jsx
+<ComponenteRecebeFilhos>
+  <span>Props children</span>
+</ComponenteRecebeFilhos>
+```
+
+---
+
+### ⚛️ `App.jsx`
+
+Componente principal que junta tudo:
+
+```jsx
+function App() {
+  return (
+    <div>
+      <h1 id="titulo">Olá, JornadaDEV!</h1>
+
+      <PrimeiroComponente texto="Texto padrão" />
+      <PrimeiroComponente texto="Texto padrão 2" />
+      <PrimeiroComponente texto="Texto padrão 3" />
+
+      <hr />
+      <strong>Componente com filhos</strong>
+      <ComponenteRecebeFilhos>
+        <span>Props children</span>
+      </ComponenteRecebeFilhos>
+    </div>
+  );
+}
+
+export default App;
+```
+
+---
+
+## 🧩 Conceitos Demonstrados no Código
+
+✅ **JSX** — sintaxe que mistura HTML com JavaScript.  
+✅ **Props** — parâmetros passados de um componente pai para o filho.  
+✅ **Children** — conteúdo filho entre as tags do componente.  
+✅ **Componentização** — criação de partes reutilizáveis da interface.  
+✅ **Exportação e Importação** — reaproveitamento de código entre arquivos.
+
+```jsx
+// Exportação padrão
+export default App;
+
+// Importação padrão
+import App from "./App";
+```
+
+---
+
+## 🧰 Ferramentas Utilizadas
+
+- **React 18+**
+- **Vite** (ambiente de build rápido)
+- **Node.js**
+- **JavaScript moderno (ES6+)**
+
+---
+
+## 🧾 Licença
+
+Material de estudo desenvolvido para fins educacionais no **Programa JornadaDev — SENAI/RS**.  
+Reprodução e uso livre para fins de aprendizado.
+
+---
+
+### 💙 Desenvolvido com apoio de:
+
+**Lab365 / SENAI**  
+📍 Formação: Desenvolvimento Front-End  
